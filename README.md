@@ -17,7 +17,7 @@
 	*  **networkTimeout**
 	*  **debug**
 	##1.pages
-	### 它的作用是配置小程序的页面,这个配置项是必填的,它接受一个数组,里面的每一项都是字符串,从上面给出的代码: "pages": [ "pages/index/index", "pages/logs/index" ] 可以看出,每一项分别对应的都是实现文件的路径以及他的文件名. *需要注意的是，这个配置里面的第一行配置是它的初始页面,例如上面代码的初始页面就是index*
+	### 它的作用是配置小程序的页面,这个配置项是必填的,它接受一个数组,里面的每一项都是字符串,从上面给出的代码: "pages": [ "pages/index/index", "pages/logs/index" ] 可以看出,每一项分别对应的都是实现文件的路径以及他的文件名. **需要注意的是，这个配置里面的第一行配置是它的初始页面,例如上面代码的初始页面就是index**
 	
 	##2. window
 	### 这个配置项是用来设置小程序的状态栏、导航条、标题、窗口背景色。他给出了六个属性
@@ -30,20 +30,22 @@
 	* **backgroundColor**
 		* 这个属性用来设置窗口背景色，输入的是十六进制颜色值
 	* **backgroundTextStyle**
-		* 这个属性我的理解是设置窗口内容的样式的,官方给出的标准说明是下拉背景字体、loading 图的样式,这个属性同navigationBarTextStyle属性一样目前仅支持两种颜色(dark和light).
+		* 这个属性我的理解是设置窗口内容的样式的,官方给出的标准说明是下拉背景字体、loading 图的样式,这个属性同navigationBarTextStyle属性  		     一样目前仅支持两种颜色(dark和light).
 	* **enablePullDownRefresh**
-		* 这个属性是设置是否开启下拉刷新,默认是开启的,注意: 在这个配置文件(app.json)中如果关闭了下拉刷新,当你在你自己开发的页面中想要设置下拉刷新也是行不通的,也就是说如果你想要在以后页面中使用下拉刷新这个功能,就必须保证这个配置文件中的这一项设置是打开的.
-	###示例代码
-		{
-		  "window":{
-		    "navigationBarBackgroundColor": "#ffffff",
-		    "navigationBarTextStyle": "black",
-		    "navigationBarTitleText": "微信接口功能演示",
-			"backgroundColor": "#ffffff",
-		    "backgroundColor": "#eeeeee",
-		    "backgroundTextStyle": "light"
-		  }
-		}
+		* 这个属性是设置是否开启下拉刷新,默认是开启的,注意: 在这个配置文件(app.json)中如果关闭了下拉刷新,当你在你自己开发的页面中想要设置                   下拉刷新也是行不通的,也就是说如果你想要在以后页面中使用下拉刷新这个功能,就必须保证这个配置文件中的这一项设置是打开的.
+		
+	### 示例代码
+			{
+			  "window":{
+			    "navigationBarBackgroundColor": "#ffffff",
+			    "navigationBarTextStyle": "black",
+			    "navigationBarTitleText": "微信接口功能演示",
+				"backgroundColor": "#ffffff",
+			    "backgroundColor": "#eeeeee",
+			    "backgroundTextStyle": "light"
+			  }
+			}
+		
 	##3. tabBar
 	###如果我们的小程序是一个多 tab 应用（客户端窗口的底部或顶部有 tab 栏可以切换页面），那么我们可以通过 tabBar 配置项指定 tab 栏的表现，以及 tab 切换时显示的对应页面。
 	###注意： 通过页面跳转（wx.navigateTo）或者页面重定向（wx.redirectTo）所到达的页面，即使它是定义在 tabBar 配置中的页面，也不会显示底部的 tab 栏。
