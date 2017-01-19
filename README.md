@@ -16,11 +16,15 @@
 	*  **tabBar**
 	*  **networkTimeout**
 	*  **debug**
+	
 	##1.pages
+	
 	### 它的作用是配置小程序的页面,这个配置项是必填的,它接受一个数组,里面的每一项都是字符串,从上面给出的代码: "pages": [ "pages/index/index", "pages/logs/index" ] 可以看出,每一项分别对应的都是实现文件的路径以及他的文件名. **需要注意的是，这个配置里面的第一行配置是它的初始页面,例如上面代码的初始页面就是index**
 	
 	##2. window
+	
 	### 这个配置项是用来设置小程序的状态栏、导航条、标题、窗口背景色。他给出了六个属性
+	
 	* **navigationBarBackgroundColo**
 		* 是用来设置导航栏背景颜色,这个属性要输入的是十六进制颜色值.
 	* **navigationBarTextStyle**
