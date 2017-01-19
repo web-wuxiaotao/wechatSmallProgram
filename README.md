@@ -55,6 +55,7 @@
 	* **backgroundColor** &nbsp;&nbsp;&nbsp; 设置tab的背景颜色
 	* **borderStyle** &nbsp;&nbsp;&nbsp; 设置tab上的边框颜色，仅支持**black/white**
 	* **position** &nbsp;&nbsp;&nbsp; tab栏的位置，分别为上：**top**、下：**bottom**。
+	
 	##4. networkTimeout
 	###用来设置网络请求的超时时间，四个属性：
 	* **request** &nbsp;&nbsp;&nbsp; 用来定义wx.request的超时时间，单位毫秒，默认为：60000
