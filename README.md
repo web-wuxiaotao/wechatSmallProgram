@@ -66,3 +66,15 @@
 	* **connectSocket** &nbsp;&nbsp;&nbsp; 用来定义wx.connectSocket的超时时间，单位毫秒，默认为：60000
 	* **uploadFile** &nbsp;&nbsp;&nbsp; 用来定义wx.uploadFile的超时时间，单位毫秒，默认为：60000
 	* **downloadFile** &nbsp;&nbsp;&nbsp; 用来定义wx.downloadFile的超时时间，单位毫秒，默认为：60000
+	
+	##5. debug
+	###可以在开发者工具中开启 debug 模式，在开发者工具的控制台面板，调试信息以 info 的形式给出，其信息有Page的注册，页面路由，数据更新，事件触发 。 可以帮助开发者快速定位一些常见的问题。
+	
+##二、 app.js  &nbsp;&nbsp;&nbsp; 这是他的逻辑层	
+	
+		
+	
+	
+	
+	
+	
